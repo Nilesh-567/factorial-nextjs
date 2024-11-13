@@ -2,7 +2,7 @@
 import { Pool } from 'pg';
 
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || "postgresql://myuser:uSfub3pbJM4MGK58DQkcW0oqG73hxG1Y@dpg-csq3ic9u0jms73fmoeig-a/mydb_hswv" ,
+  connectionString: process.env.DATABASE_URL || "postgresql://myuser:uSfub3pbJM4MGK58DQkcW0oqG73hxG1Y@dpg-csq3ic9u0jms73fmoeig-a.oregon-postgres.render.com/mydb_hswv" || "postgresql://myuser:uSfub3pbJM4MGK58DQkcW0oqG73hxG1Y@dpg-csq3ic9u0jms73fmoeig-a/mydb_hswv" ,
   ssl: {
     rejectUnauthorized: false,
   },
